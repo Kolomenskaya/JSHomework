@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	var x;
+	var y;
+	var min;
+	var max;
+		x=prompt ("Введите значение переменной x");
+		y=prompt ("Введите значение переменной y");
+		min=Math.min (x,y);
+		max=Math.max (x,y);
+		if (isNaN(x)) {
+			alert ('Введено неверное значение!');
+		}
+		else {
+			alert ('Нам нужно, чтобы чтобы в x оказалось меньшее значение.\nПоэтому x = '+min+', y = '+max );
+		}
+</script>
+</body>
+</html>

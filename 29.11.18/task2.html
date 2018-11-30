@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	var x1; //вершина А
+	var y1; //вершина А
+	var x2; //вершина Б
+	var y2; //вершина Б
+	var x3; //вершина С
+	var y3; //вершина С
+	var g; //ab2
+	var l; //bc2
+	var m; //ac2
+		x1=prompt('Введите координату x для вершины А');
+		y1=prompt('Введите координату y для вершины А');
+		x2=prompt('Введите координату x для вершины Б');
+		y2=prompt('Введите координату y для вершины Б');
+		x3=prompt('Введите координату x для вершины С');
+		y3=prompt('Введите координату y для вершины С');
+	g=Math.pow((y2-y1),2)+Math.pow((x2-x1),2);
+	l=Math.pow((y2-y3),2)+Math.pow((x2-x3),2);
+	m=Math.pow((y3-y1),2)+Math.pow((x3-x1),2);
+	if (g==l+m) {
+		 alert('Ура, треугольник прямоугольный!');
+	}
+	else if (l==g+m) {
+		 alert('Ура, треугольник прямоугольный!');
+	}
+	else if (m==g+l) {
+		 alert('Ура, треугольник прямоугольный!');
+	}
+
+	else {
+		alert('Треугольник не прямоугольный!');
+	}
+</script>
+</body>
+</html>

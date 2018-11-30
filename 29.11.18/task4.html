@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	var x=prompt('Выберите единицу измерения:\n1 — дециметр\n2 — километр\n3 — метр\n4 — миллиметр\n5 — сантиметр');
+	var lgth=prompt('Длина отрезка:');
+	if (x==1 && lgth>0) {
+		 alert("А вот в метрах длина вашего отрезка "+lgth/10+" м!");
+	}
+	else if (x==2 && lgth>0) {
+		 alert("А вот в метрах длина вашего отрезка "+lgth*1000+" м!");
+	}
+	else if (x==3 && lgth>0) {
+		 alert("Длина вашего отрезка "+lgth+" метров.");
+	}
+	else if (x==4 && lgth>0) {
+		 alert("А вот в метрах длина вашего отрезка "+lgth/1000+" м!");
+	}
+	else if (x==5 && lgth>0) {
+		 alert("А вот в метрах длина вашего отрезка "+lgth/100+" м!");
+	}
+
+	else {
+		alert('Не шутите так!');
+	}
+
+</script>
+</body>
+</html>
