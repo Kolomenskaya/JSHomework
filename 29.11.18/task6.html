@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	var x=prompt('Какой год?');
+		if ((x%4==0) && (x%100!=0)) {
+			alert("Год високосный!");
+		}
+		else if ((x%4==0) && (x%100==0) && (x%400==0)) {
+			alert("Год високосный!");
+		}
+		else {
+			alert("Год не високосный!");
+		}
+</script>
+</body>
+</html>
