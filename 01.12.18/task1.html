@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script>
+	var x=prompt('Сколько нужно денег?');
+	var y=prompt('Под какой процент?');
+	var z=prompt('На сколько лет?');
+	var a; //Аннуительный платеж
+	var b; // Сумма переплаты
+	var z1=z*12 //Срок кредита в месяцах
+	var y1=y/1200 // Процентная ставка в месяц
+		a=x*y1*Math.pow((1+y1),z1)/(Math.pow((1+y1),z1)-1);
+		b=z1*a-x;
+			alert("Переплата по кредиту - "+Math.round(b)+" рублей.");
+</script>
+</body>
+</html>
