@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+	var student = {
+		myname:"Haruki",
+		surname:"Murakami",
+		age:"69",
+		university:"Waseda Daigaku",
+		interests: ["writing","jazz","spagetti"],
+		mew:function (str){    
+        alert(this.myname+" "+this.surname+", "+this.age+". "+"Interests: "+this.interests+". Finished the "+this.university+" university.");
+		}
+	}
+	student.mew(student);
+</script>
+</body>
+</html>
