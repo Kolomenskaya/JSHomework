@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="display:grid; grid-template-columns: 33% 33%;grid-template-rows: 1fr;">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- Первый график -->
+
+<div id="placeholder"></div>
+<script>
+var line1 = {
+x:[],
+y:[],
+type:'scatter'
+};
+function one(){
+for (var i=-5; i<1; i=i+0.01){
+	line1.y.push(i*i-4*i);
+	line1.x.push(i);
+	};
+};
+one();
+var data = [line1];
+Plotly.newPlot('placeholder', data);
+</script>
+
+<!-- Второй график -->
+
+<div id="placeholdertwo"></div>
+<script>
+var line2 = {
+x:[],
+y:[],
+type:'scatter'
+};
+function two(){
+for (var i=1; i<5; i=i+0.01){
+	line2.y.push(5/i);
+	line2.x.push(i);
+	};
+};
+two();
+var datatwo = [line2];
+Plotly.newPlot('placeholdertwo',datatwo);
+</script>
+</body>
+</html>
