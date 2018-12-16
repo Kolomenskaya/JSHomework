@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="one" onclick="changeColor()" style="height: 200px; width: 200px; margin: 100px; border: 1px solid black; float: left;"></div>
+	<div id="two" onclick="changedColor()" style="height: 200px; width: 200px; margin: 100px; border: 1px solid black; float: left;"></div>
+	<script>
+	var i=0;
+	        function changeColor() {
+	            var colorList = ["#8bc34a","white"];
+	            document.getElementById("one").style.backgroundColor = colorList[i]; 
+	            i++;
+	            if (i==colorList.length) i=0; 
+	        }
+	        function changedColor() {
+	            var colorList = ["#8bc34a","white"];
+	            document.getElementById("two").style.backgroundColor = colorList[i]; 
+	            i++;
+	            if (i==colorList.length) i=0; 
+	        }
+	</script>
+</body>
+</html>
